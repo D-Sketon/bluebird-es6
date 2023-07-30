@@ -1,0 +1,22 @@
+{
+  "name": "bluebird-es6",
+  "version": "0.0.1",
+  "description": "",
+  "type": "module",
+  "main": "src/bluebird.js",
+  "scripts": {
+    "standalone": "rollup -c standalone.config.js",
+    "test": "promises-aplus-tests /test/test.cjs"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "async_hooks": "^1.0.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.3",
+    "promises-aplus-tests": "^2.1.2",
+    "rollup": "^3.27.0",
+    "rollup-plugin-cleanup": "^3.2.1"
+  }
+}

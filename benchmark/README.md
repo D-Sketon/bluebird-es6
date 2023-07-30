@@ -1,8 +1,4 @@
-# bluebird-es6
-
-Rewrite of [bluebird](https://github.com/petkaantonov/bluebird) using ES6 for **learning** purposes only.
-
-# Benchmark
+bench doxbee-sequential `ls ./doxbee-sequential/*.js | sed -e 's|\.js||' | xargs node ./performance.js --p 1 --t 1 --n 10000`
 
     results for 10000 parallel executions, 1 ms per I/O op
 
@@ -39,6 +35,10 @@ Rewrite of [bluebird](https://github.com/petkaantonov/bluebird) using ES6 for **
     V8 10.2.154.15-node.12
     AMD Ryzen 7 4800H with Radeon Graphics          × 16
 
+
+bench parallel (`--p 25`)
+
+results for 10000 parallel executions, 1 ms per I/O op `ls ./madeup-parallel/*.js | sed -e 's|\.js||' | xargs node ./performance.js --p 25 --t 1 --n 10000`
 
     results for 10000 parallel executions, 1 ms per I/O op
 
